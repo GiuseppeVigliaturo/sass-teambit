@@ -1,0 +1,19 @@
+.presentation
+{
+  @include display-flex-around;
+
+  .presentation-sx
+  {
+    margin: 10px;
+    flex-basis: 50%;
+  }
+
+  .presentation-dx{
+    margin: 10px;
+    flex-basis: 50%;
+    .main-illustration{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+header
+{
+  .header-top
+  {
+    background-color: pink;
+    text-align: $text_hdr_top;
+  }
+  .header-bottom
+  {
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    @include display-flex-around;
+    .hdr-btm-sx
+    {
+
+    }
+    .hdr-btm-dx
+    {
+      @include display-flex-around;
+      .nav-menu
+      {
+        @include display-flex-around;
+
+        li
+        {
+          padding: 15px;
+        }
+      }
+
+    }
+
+  }
+
+}
