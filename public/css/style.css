@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 90%;
+  margin-left: 5%;
+}
+
 .btn-primary {
   padding: 5px;
   border: 2px solid blue;
@@ -24,9 +29,27 @@ a {
   background-color: blue;
 }
 
+.btn-secondary {
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+}
+
+.autoimg {
+  width: 100%;
+  height: 100%;
+}
+
 header .header-top {
   background-color: pink;
   text-align: center;
+  height: 40px;
 }
 
 header .header-bottom {
@@ -38,8 +61,8 @@ header .header-bottom {
   -webkit-box-direction: normal;
           flex-direction: row;
   justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 header .header-bottom .hdr-btm-dx {
@@ -49,22 +72,12 @@ header .header-bottom .hdr-btm-dx {
   -webkit-box-direction: normal;
           flex-direction: row;
   justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center;
-}
-
-header .header-bottom .hdr-btm-dx .nav-menu {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 header .header-bottom .hdr-btm-dx .nav-menu li {
+  display: inline-block;
   padding: 15px;
 }
 
@@ -75,13 +88,31 @@ header .header-bottom .hdr-btm-dx .nav-menu li {
   -webkit-box-direction: normal;
           flex-direction: row;
   justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 .presentation .presentation-sx {
   margin: 10px;
   flex-basis: 50%;
+}
+
+.presentation .presentation-sx h2 {
+  font-size: 3.5em;
+}
+
+.presentation .presentation-sx p {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.presentation .presentation-sx .alter-reg {
+  padding: 10px;
+}
+
+.presentation .presentation-sx .alter-reg a {
+  color: #58402C;
 }
 
 .presentation .presentation-dx {
@@ -92,5 +123,45 @@ header .header-bottom .hdr-btm-dx .nav-menu li {
 .presentation .presentation-dx .main-illustration {
   width: 100%;
   height: 100%;
+}
+
+.sezione2 {
+  background-color: #FFE7D2;
+}
+
+footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-sx {
+  width: 30%;
+}
+
+footer .footer-dx {
+  width: 70%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-dx .nav-footer li {
+  padding: 5px;
+  color: #58402C;
+}
+
+footer .footer-dx .nav-footer li a {
+  color: #58402C;
 }
 

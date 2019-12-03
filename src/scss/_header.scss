@@ -4,6 +4,8 @@ header
   {
     background-color: pink;
     text-align: $text_hdr_top;
+    height: 40px;
+      
   }
   .header-bottom
   {
@@ -19,10 +21,10 @@ header
       @include display-flex-around;
       .nav-menu
       {
-        @include display-flex-around;
 
         li
         {
+          display: inline-block;
           padding: 15px;
         }
       }

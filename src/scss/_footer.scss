@@ -1,0 +1,26 @@
+footer
+{
+  @include display-flex-around;
+
+    .footer-sx{
+      width: 30%;
+
+    }
+    .footer-dx{
+      width: 70%;
+      @include display-flex-around;
+
+        .nav-footer{
+
+            li{
+              padding: 5px;
+              color: $color-txt-footer;
+
+                a{
+                  color: $color-txt-footer;
+                }
+            }
+        }
+
+    }
+}

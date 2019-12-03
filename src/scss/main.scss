@@ -6,6 +6,22 @@
   {
     margin: 10px;
     flex-basis: 50%;
+
+      h2{
+        font-size: 3.5em;
+      }
+      p{
+        display: inline-block;
+        padding: 5px;
+        font-size: 1.5em;
+      }
+      .alter-reg{
+        padding: 10px;
+          a{
+            color: #58402C;
+          }
+
+      }
   }
 
   .presentation-dx{
@@ -16,4 +32,8 @@
       height: 100%;
     }
   }
+}
+.sezione2
+{
+  background-color: $bg-color-sec-colorate;
 }
