@@ -1,5 +1,7 @@
 footer
 {
+
+
   @include display-flex-around;
 
     .footer-sx{
@@ -15,7 +17,7 @@ footer
             li{
               padding: 5px;
               color: $color-txt-footer;
-              width: calc(100% / 4);
+
 
                 a{
                   color: $color-txt-footer;
@@ -25,13 +27,30 @@ footer
 
     }
 }
-@media screen and (max-width: 450px) {
-  .nav-footer{
+@media screen and (min-width: 451px) and (max-width: 768px){
 
-      li{
-        padding: 5px;
-        color: $color-txt-footer;
-        width: 100%;    
-      }
+  header .header-bottom .hdr-btm-dx .nav-menu  {
+    display: none;
   }
+
+  header .header-bottom .hdr-btm-dx .hamburger-menu {
+    display: block;
+  }
+  .nav-footer{
+    width: 50%;
+  }
+
+}
+@media screen and (max-width: 450px) {
+  header .header-bottom .hdr-btm-dx .nav-menu  {
+    display: none;
+  }
+
+  header .header-bottom .hdr-btm-dx .hamburger-menu {
+    display: block;
+  }
+  .nav-footer{
+    width: 100%;
+  }
+
 }

@@ -5,7 +5,7 @@ header
     background-color: pink;
     text-align: $text_hdr_top;
     height: 40px;
-      
+
   }
   .header-bottom
   {
@@ -18,6 +18,10 @@ header
     }
     .hdr-btm-dx
     {
+      .hamburger-menu
+      {
+        display: none;
+      }
       @include display-flex-around;
       .nav-menu
       {
