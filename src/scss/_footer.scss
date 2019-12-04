@@ -3,11 +3,11 @@ footer
   @include display-flex-around;
 
     .footer-sx{
-      width: 30%;
+
 
     }
     .footer-dx{
-      width: 70%;
+
       @include display-flex-around;
 
         .nav-footer{
@@ -15,6 +15,7 @@ footer
             li{
               padding: 5px;
               color: $color-txt-footer;
+              width: calc(100% / 4);
 
                 a{
                   color: $color-txt-footer;
@@ -23,4 +24,14 @@ footer
         }
 
     }
+}
+@media screen and (max-width: 450px) {
+  .nav-footer{
+
+      li{
+        padding: 5px;
+        color: $color-txt-footer;
+        width: 100%;    
+      }
+  }
 }

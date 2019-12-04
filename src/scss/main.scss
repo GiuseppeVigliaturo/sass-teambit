@@ -1,6 +1,7 @@
 .presentation
 {
   @include display-flex-around;
+  
 
   .presentation-sx
   {
@@ -16,8 +17,12 @@
         font-size: 1.5em;
       }
       .alter-reg{
-        padding: 10px;
+        margin-top: 20px;
+        padding: 20px;
           a{
+
+            display: inline-block;
+
             color: #58402C;
           }
 
@@ -36,4 +41,10 @@
 .sezione2
 {
   background-color: $bg-color-sec-colorate;
+}
+
+.sezione4
+{
+  background-color: $bg-color-sec-colorate;
+  text-align: $align-center;
 }
